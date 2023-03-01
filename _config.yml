@@ -28,7 +28,7 @@ twitter_username: SadIQ_lives
 github_username:  Exbyte112
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
