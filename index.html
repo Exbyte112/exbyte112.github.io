@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Basic Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="https://github.com/exbyte112">My Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-me">
+        <h1>About Me</h1>
+        <img src="default.png" alt="My photo" width="100">
+        <p>Hi, I'm a software developer with 5 years of experience in development.</p>
+        <p>I specialize in technologies such as Python, Kotlin, HTML, CSS, and JavaScript.</p>
+      </section>
+      <section id="my-projects">
+        <h1>My Projects</h1>
+        <ul>
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+          <li><a href="#">Project 3</a></li>
+        </ul>
+      </section>
+      <section id="contact-me">
+        <h1>Contact Me</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Basic Webpage</p>
+    </footer>
+  </body>
+</html>
