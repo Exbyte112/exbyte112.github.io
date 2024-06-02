@@ -171,3 +171,8 @@ footer p {
   margin: 0;
   background-color: #003A34;
 }
+
+.bot {
+  width: 200px;
+  height: 150px;
+}
