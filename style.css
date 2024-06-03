@@ -178,7 +178,7 @@ footer p {
 }
 
 /* Styles for Discord Bot Section */
-.discord-projects {
+.discord-section {
   border: 2px solid #4CAF50; /* Green border for Discord section */
   border-radius: 5px;
   padding: 10px;
@@ -188,4 +188,54 @@ footer p {
 
 .discord-projects h3 {
   color: #4CAF50; /* Green heading for Discord section */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff; /* Adjusted text color for better readability on dark background */
+  background-color: #1E352F; /* Dark green background */
+  text-align: center;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  line-height: 3.0;
+  letter-spacing: 1px;
+  font-size:medium;
+}
+
+/* Styles for Discord Bot Section */
+.discord-section {
+  border: 2px solid #4CAF50; /* Green border for Discord section */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, rgba(0, 204, 0, 0.2), rgba(0, 153, 0, 0.2)); /* Animated green background gradient */
+  animation: shine 2s infinite alternate; /* Animation for the background gradient */
+  position: relative; /* Needed for the following pseudo-element */
+}
+
+.discord-section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 255, 0, 0.5), rgba(0, 128, 0, 0.5)); /* Green overlay appearing on hover */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.discord-section:hover:after {
+  opacity: 0.2; /* Opacity of the green overlay on hover */
+}
+
+@keyframes shine {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
 }
