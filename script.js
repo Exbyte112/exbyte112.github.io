@@ -1,27 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('modal');
-    const modalDescription = document.getElementById('modal-description');
-    const span = document.getElementsByClassName('close')[0];
-
-    document.querySelectorAll('.project-item').forEach(item => {
-        item.addEventListener('click', () => {
-            const description = item.getAttribute('data-description');
-            modalDescription.textContent = description;
-            modal.style.display = 'block';
-        });
-    });
-
-    span.onclick = function() {
-        modal.style.display = 'none';
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    }
-});
-
 // Open the modal with the image and description of the clicked project item
 function openModal(imageUrl, description) {
     var modal = document.getElementById("modal");
@@ -47,7 +23,7 @@ projectItems.forEach(function(item) {
     item.addEventListener("click", function() {
         // Get the image URL and description of the clicked project item
         var imageUrl = this.querySelector("img").getAttribute("src");
-        var description = this.querySelector("p").textContent;
+        var description = this.getAttribute("data-description");
 
         // Open the modal with the image and description
         openModal(imageUrl, description);
