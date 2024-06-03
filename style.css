@@ -177,10 +177,17 @@ footer p {
   margin-bottom: 20px;
 }
 
+.project-grid {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  flex-wrap: wrap; /* Enable wrapping for responsiveness */
+  gap: 20px; /* Add some space between cards */
+}
+
 .project-item {
   width: calc(33.33% - 20px); /* Adjusted width to fit 1x3 grid */
-  height: 300px; /* Set a fixed height for all cards */
-  margin-bottom: 20px;
+  max-width: 300px; /* Set a maximum width for each card */
+  height: auto; /* Allow cards to adjust height based on content */
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 10px;
@@ -188,6 +195,8 @@ footer p {
   display: flex; /* Align items in a row */
   flex-direction: column; /* Align items vertically */
   justify-content: space-between; /* Distribute space evenly between items */
+  background-color: #1E352F; /* Add background color to cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 .project-item:hover {
@@ -203,12 +212,16 @@ footer p {
 .project-item p {
   padding: 10px;
   margin: 0;
-  background-color: #1E352F;
   border-radius: 0 0 10px 10px;
   color: #fff;
-  flex-grow: 1; /* Expand to fill available space */
 }
 
+.project-item h3 {
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+}
 
 /* Unique styling for Discord and Telegram sections */
 .discord .section-title {
