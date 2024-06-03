@@ -178,14 +178,16 @@ footer p {
 }
 
 .project-item {
-  width: 31%; /* Adjusted width for better alignment */
+  width: calc(33.33% - 20px); /* Adjusted width to fit 1x3 grid */
   margin-bottom: 20px;
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 10px;
   transition: border-color 0.3s ease;
+  display: flex; /* Align items in a row */
+  flex-direction: column; /* Align items vertically */
+  justify-content: space-between; /* Distribute space evenly between items */
 }
-
 
 .project-item:hover {
   border-color: #4CAF50;
@@ -202,7 +204,8 @@ footer p {
   margin: 0;
   background-color: #1E352F;
   border-radius: 0 0 10px 10px;
-  color: #fff; /* Revert text color to white */
+  color: #fff;
+  flex-grow: 1; /* Expand to fill available space */
 }
 
 
