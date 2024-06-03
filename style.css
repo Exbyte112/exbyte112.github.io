@@ -178,13 +178,14 @@ footer p {
 }
 
 .project-item {
-  width: calc(33.33% - 20px); /* Adjusted width to fit 1x3 grid */
+  width: 31%; /* Adjusted width for better alignment */
   margin-bottom: 20px;
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 10px;
   transition: border-color 0.3s ease;
 }
+
 
 .project-item:hover {
   border-color: #4CAF50;
@@ -215,6 +216,7 @@ footer p {
 }
 
 /* Modal Styles */
+/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -242,14 +244,13 @@ footer p {
   float: right;
   font-size: 28px;
   font-weight: bold;
-}
-
-.close,
-.close:hover {
-  color: #fff; /* Revert color to white */
-  text-decoration: none;
   cursor: pointer;
 }
+
+.close:hover {
+  color: #fff; /* Revert color to white */
+}
+
 
 #modal-image {
   text-align: center;
@@ -275,44 +276,4 @@ footer p {
   .project-item {
     width: 100%; /* Adjusted width for mobile view */
   }
-}
-
-
-#about {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center; /* Align text to the center */
-}
-
-#about img {
-  display: block;
-  margin: 0 auto 20px; /* Center the image and add bottom margin */
-  border-radius: 50%; /* Apply a circular border radius to the image */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
-}
-
-#about p {
-  font-size: 18px; /* Increase font size for better readability */
-  line-height: 1.6; /* Maintain a comfortable line height */
-  color: #777; /* Use a slightly lighter color for better contrast */
-}
-
-#about ul {
-  list-style: none; /* Remove default list styles */
-  padding: 0;
-}
-
-#about ul li {
-  margin-bottom: 10px; /* Add some bottom margin to list items */
-  font-weight: bold; /* Make list items bold for emphasis */
-  color: #4CAF50; /* Use a green color for list items */
-}
-
-#about ul li:before {
-  content: "\2022"; /* Use a bullet point as list item marker */
-  color: #4CAF50; /* Match the color of list items */
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
 }
