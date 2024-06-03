@@ -6,7 +6,6 @@ body {
   color: #fff;
   background-color: #1E352F;
   text-align: center;
-  font-size: medium;
 }
 
 html {
@@ -179,7 +178,7 @@ footer p {
 }
 
 .project-item {
-  width: 250px;
+  width: calc(33.33% - 20px); /* Adjusted width to fit 1x3 grid */
   margin-bottom: 20px;
   cursor: pointer;
   border: 2px solid transparent;
@@ -202,7 +201,9 @@ footer p {
   margin: 0;
   background-color: #1E352F;
   border-radius: 0 0 10px 10px;
+  color: #fff; /* Revert text color to white */
 }
+
 
 /* Unique styling for Discord and Telegram sections */
 .discord .section-title {
@@ -223,11 +224,10 @@ footer p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
-  }
-  
-  .modal-content {
+  background-color: rgba(0, 0, 0, 0.9); /* Adjusted background color */
+}
+
+.modal-content {
   background-color: #fefefe;
   margin: 10% auto;
   padding: 20px;
@@ -235,52 +235,84 @@ footer p {
   width: 80%;
   border-radius: 10px;
   position: relative;
-  }
-  
-  .close {
+}
+
+.close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  }
-  
-  .close
-  ,
-  .close
-  {
-  color: black;
+}
+
+.close,
+.close:hover {
+  color: #fff; /* Revert color to white */
   text-decoration: none;
   cursor: pointer;
-  }
-  
-  #modal-image {
+}
+
+#modal-image {
   text-align: center;
   margin-bottom: 20px;
-  }
-  
-  #modal-image img {
+}
+
+#modal-image img {
   max-width: 100%;
   height: auto;
-  }
-  
-  #modal-description {
+}
+
+#modal-description {
   text-align: left;
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 600px) {
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
   .portfolio-section {
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    width: 100%; /* Adjusted width for mobile view */
   }
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+
+#about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Align text to the center */
 }
 
-.project-item {
-  width: 100%;
+#about img {
+  display: block;
+  margin: 0 auto 20px; /* Center the image and add bottom margin */
+  border-radius: 50%; /* Apply a circular border radius to the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
+}
+
+#about p {
+  font-size: 18px; /* Increase font size for better readability */
+  line-height: 1.6; /* Maintain a comfortable line height */
+  color: #777; /* Use a slightly lighter color for better contrast */
+}
+
+#about ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+}
+
+#about ul li {
+  margin-bottom: 10px; /* Add some bottom margin to list items */
+  font-weight: bold; /* Make list items bold for emphasis */
+  color: #4CAF50; /* Use a green color for list items */
+}
+
+#about ul li:before {
+  content: "\2022"; /* Use a bullet point as list item marker */
+  color: #4CAF50; /* Match the color of list items */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
