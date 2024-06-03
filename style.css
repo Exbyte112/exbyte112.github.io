@@ -179,6 +179,7 @@ footer p {
 
 .project-item {
   width: calc(33.33% - 20px); /* Adjusted width to fit 1x3 grid */
+  height: 300px; /* Set a fixed height for all cards */
   margin-bottom: 20px;
   cursor: pointer;
   border: 2px solid transparent;
