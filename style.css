@@ -9,62 +9,62 @@ body {
   font: 400 15px/1.8 "Lato", sans-serif;
   line-height: 3.0;
   letter-spacing: 1px;
-  font-size:medium;
+  font-size: medium;
 }
 
 html {
-  height:100%;
+  height: 100%;
 }
 
 body {
-  margin:0;
+  margin: 0;
 }
 
 .bg {
-  animation:slide 3s ease-in-out infinite alternate;
+  animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, rgb(46, 112, 14) 50%, #1E352F 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
 }
 
 .bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
 }
 
 .bg3 {
-  animation-duration:5s;
+  animation-duration: 5s;
 }
 
 .content {
-  background-color:rgba(255,255,255,.8);
-  border-radius:.25em;
-  box-shadow:0 0 .25em rgba(0,0,0,.25);
-  box-sizing:border-box;
-  left:50%;
-  padding:10vmin;
-  position:fixed;
-  text-align:center;
-  top:50%;
-  transform:translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: .25em;
+  box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
-  font-family:monospace;
+  font-family: monospace;
 }
 
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+      transform: translateX(-25%);
   }
 
   100% {
-    transform:translateX(25%);
+      transform: translateX(25%);
   }
 }
 
@@ -89,8 +89,6 @@ header {
   background-image: linear-gradient(#1E352F 50%, #2C4B40 50%); /* Replace with your desired pattern */
   background-size: 2px 2px; /* Adjust size as needed */
 }
-
-
 
 nav ul {
   display: flex;
@@ -162,80 +160,105 @@ form button {
 /* Footer Styles */
 footer {
   background-color: #000; /* Black footer background */
-  /* ... (unchanged styles) ... */
+  padding: 10px;
+  text-align: center;
 }
 
 footer p {
   font-size: 14px;
   color: #666;
   margin: 0;
-  background-color: #003A34;
 }
 
-.bot {
+/* Portfolio Section Styles */
+.portfolio-section {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.portfolio-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.portfolio-section.discord {
+  background-color: #2E4B30; /* Dark green background for Discord section */
+  border: 2px solid #7289DA; /* Discord color border */
+}
+
+.portfolio-section.telegram {
+  background-color: #2F3B4C; /* Dark blue background for Telegram section */
+  border: 2px solid #0088CC; /* Telegram color border */
+}
+
+.portfolio-section h3 {
+  color: #fff; /* White text color for section titles */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #1E352F; /* Dark green background for project items */
+  border-radius: 10px;
+  overflow: hidden;
   width: 200px;
-  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
 }
 
-/* Styles for Discord Bot Section */
-.discord-section {
-  border: 2px solid #4CAF50; /* Green border for Discord section */
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 20px;
-  background-color: rgba(220, 248, 220, 0.3); /* Light green background for Discord section */
+.project-item:hover {
+  transform: scale(1.05);
 }
 
-.discord-projects h3 {
-  color: #4CAF50; /* Green heading for Discord section */
-}
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff; /* Adjusted text color for better readability on dark background */
-  background-color: #1E352F; /* Dark green background */
-  text-align: center;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  line-height: 3.0;
-  letter-spacing: 1px;
-  font-size:medium;
-}
-
-/* Styles for Discord Bot Section */
-.discord-section {
-  border: 2px solid #4CAF50; /* Green border for Discord section */
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 20px;
-  background: linear-gradient(to right, rgba(0, 204, 0, 0.2), rgba(0, 153, 0, 0.2)); /* Animated green background gradient */
-  animation: shine 2s infinite alternate; /* Animation for the background gradient */
-  position: relative; /* Needed for the following pseudo-element */
-}
-
-.discord-section:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.project-item img {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 255, 0, 0.5), rgba(0, 128, 0, 0.5)); /* Green overlay appearing on hover */
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  height: auto;
 }
 
-.discord-section:hover:after {
-  opacity: 0.2; /* Opacity of the green overlay on hover */
+.project-item p {
+  margin: 0;
+  padding: 10px;
+  background-color: #fff; /* White background for text */
+  color: #000; /* Black text color */
+  font-size: 16px;
 }
 
-@keyframes shine {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
+/* Contact Section Styles */
+#contact {
+  padding: 20px;
+  background-color: #1E352F; /* Dark green background */
+  border-top: 2px solid #4CAF50; /* Green border at the top */
+}
+
+#contact h1 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#contact nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#contact nav li {
+  display: inline;
+}
+
+#contact nav a img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+#contact nav a img:hover {
+  transform: scale(1.2);
 }
