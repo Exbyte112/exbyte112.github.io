@@ -177,10 +177,6 @@ footer p {
   margin-bottom: 40px;
 }
 
-.portfolio-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
 .portfolio-section.discord {
   background-color: #2E4B30; /* Dark green background for Discord section */
   border: 2px solid #7289DA; /* Discord color border */
@@ -220,6 +216,11 @@ footer p {
 .project-item img {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.project-item:hover img {
+  transform: scale(1.1); /* Scale image on hover */
 }
 
 .project-item p {
