@@ -32,56 +32,53 @@
             </ul>
         </section>
 
-        <section id="portfolio">
+        <section id="Past Work Examples">
             <h2>Portfolio</h2>
-            
+
             <div class="portfolio-section discord">
                 <h3>Discord Utility Bots</h3>
                 <div class="project-grid">
-                    <div class="project-item">
-                        <a href="https://github.com/Exbyte112/ukubot">
-                            <img src="https://i.imgur.com/yhmtC29.png" alt="General utility bot">
-                            <p>Urban dictionary command</p>
-                        </a>
+                    <div class="project-item" data-description="Urban dictionary command">
+                        <img src="https://i.imgur.com/yhmtC29.png" alt="General utility bot">
+                        <p>Urban dictionary command</p>
                     </div>
-                    <div class="project-item">
-                        <a href="https://github.com/Exbyte112/ukubot">
-                            <img src="https://i.imgur.com/UczSuN8.png" alt="Wolfram Alpha AI command">
-                            <p>Wolfram Alpha AI command</p>
-                        </a>
+                    <div class="project-item" data-description="Wolfram Alpha AI command">
+                        <img src="https://i.imgur.com/UczSuN8.png" alt="Wolfram Alpha AI command">
+                        <p>Wolfram Alpha AI command</p>
                     </div>
-                    <div class="project-item">
-                        <a href="https://github.com/Exbyte112/ukubot">
-                            <img src="https://i.imgur.com/NmjS4C0.png" alt="Language translation">
-                            <p>Language translation</p>
-                        </a>
+                    <div class="project-item" data-description="Language translation">
+                        <img src="https://i.imgur.com/NmjS4C0.png" alt="Language translation">
+                        <p>Language translation</p>
                     </div>
                 </div>
             </div>
 
             <div class="portfolio-section telegram">
-                <h3>Food Delivery Forwarder Bot (Discord to Telegram)</h3>
+                <h3>Food delivery forwarder bot (Discord to telegram)</h3>
                 <div class="project-grid">
-                    <div class="project-item">
-                        <a href="/">
-                            <img src="https://i.imgur.com/41jiSbe.png" alt="Start Command">
-                            <p>Start Command</p>
-                        </a>
+                    <div class="project-item" data-description="Start Command">
+                        <img src="https://i.imgur.com/41jiSbe.png" alt="Start Command">
+                        <p>Start Command</p>
                     </div>
-                    <div class="project-item">
-                        <a href="/">
-                            <img src="https://i.imgur.com/Jes9o2V.png" alt="Conversation flow">
-                            <p>Conversation flow</p>
-                        </a>
+                    <div class="project-item" data-description="Conversation flow">
+                        <img src="https://i.imgur.com/Jes9o2V.png" alt="Conversation flow">
+                        <p>Conversation flow</p>
                     </div>
-                    <div class="project-item">
-                        <a href="https://github.com/Exbyte112/telegram-bot-3">
-                            <img src="https://i.imgur.com/98ctcD5.png" alt="Ticket Received on Discord">
-                            <p>Ticket Received on Discord</p>
-                        </a>
+                    <div class="project-item" data-description="Ticket Received on Discord">
+                        <img src="https://i.imgur.com/98ctcD5.png" alt="Ticket Received on Discord">
+                        <p>Ticket Received on Discord</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>
@@ -100,5 +97,7 @@
             </ul>
         </nav>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
