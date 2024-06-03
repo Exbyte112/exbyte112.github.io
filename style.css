@@ -62,7 +62,6 @@ h1 {
   0% {
       transform: translateX(-25%);
   }
-
   100% {
       transform: translateX(25%);
   }
@@ -160,26 +159,33 @@ form button {
 /* Footer Styles */
 footer {
   background-color: #000; /* Black footer background */
-  padding: 10px;
-  text-align: center;
 }
 
 footer p {
   font-size: 14px;
   color: #666;
   margin: 0;
+  background-color: #003A34;
 }
 
-/* Portfolio Section Styles */
+.bot {
+  width: 200px;
+  height: 150px;
+}
+
+/* Border and Hover Animation */
 .portfolio-section {
-  padding: 20px;
+  border: 2px solid transparent;
   border-radius: 10px;
-  margin-bottom: 40px;
+  transition: border-color 0.3s ease;
 }
 
-.portfolio-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.portfolio-section:hover {
+  border-color: #4CAF50; /* Green border color on hover */
+}
+
+.project-item {
+  cursor: pointer;
 }
 
 /* Modal Styles */
@@ -217,9 +223,5 @@ footer p {
 .close:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
-}
-
-.project-item {
   cursor: pointer;
 }
