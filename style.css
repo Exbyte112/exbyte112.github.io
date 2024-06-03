@@ -3,12 +3,9 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff; /* Adjusted text color for better readability on dark background */
-  background-color: #1E352F; /* Dark green background */
+  color: #fff;
+  background-color: #1E352F;
   text-align: center;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  line-height: 3.0;
-  letter-spacing: 1px;
   font-size: medium;
 }
 
@@ -68,7 +65,7 @@ h1 {
 }
 
 a {
-  color: #4CAF50; /* Green link color */
+  color: #4CAF50;
 }
 
 ul {
@@ -84,9 +81,9 @@ header {
   padding: 15px;
   border-bottom: #ccc 1px solid;
   border-radius: 20px;
-  background-color: #1E352F; /* Dark green background */
-  background-image: linear-gradient(#1E352F 50%, #2C4B40 50%); /* Replace with your desired pattern */
-  background-size: 2px 2px; /* Adjust size as needed */
+  background-color: #1E352F;
+  background-image: linear-gradient(#1E352F 50%, #2C4B40 50%);
+  background-size: 2px 2px;
 }
 
 nav ul {
@@ -147,7 +144,7 @@ form textarea {
 }
 
 form button {
-  background-color: #4CAF50; /* Green button background */
+  background-color: #4CAF50;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -178,6 +175,7 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .project-item {
@@ -190,7 +188,7 @@ footer p {
 }
 
 .project-item:hover {
-  border-color: #4CAF50; /* Green border color on hover */
+  border-color: #4CAF50;
 }
 
 .project-item img {
@@ -206,7 +204,15 @@ footer p {
   border-radius: 0 0 10px 10px;
 }
 
-/* Modal Styles */
+/* Unique styling for Discord and Telegram sections */
+.discord .section-title {
+  color: #7289DA; /* Discord color */
+}
+
+.telegram .section-title {
+  color: #0088cc; /* Telegram color */
+}
+
 /* Modal Styles */
 .modal {
   display: none;
@@ -217,46 +223,58 @@ footer p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-}
-
-.modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
   padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
   border-radius: 10px;
-  max-width: 80%;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow */
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #333;
-  font-size: 24px;
+  position: relative;
+  }
+  
+  .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+  
+  .close
+  ,
+  .close
+  {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
-}
-
-#modal-image {
+  }
+  
+  #modal-image {
+  text-align: center;
   margin-bottom: 20px;
-}
-
-#modal-image img {
+  }
+  
+  #modal-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  display: block; /* Ensure the image displays as a block element */
-  margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  #modal-description {
+  text-align: left;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+  .portfolio-section {
+  flex-direction: column;
+  align-items: center;
+  }
 }
 
-#modal-description {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
+.project-item {
+  width: 90%;
 }
-
