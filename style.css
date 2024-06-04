@@ -233,7 +233,6 @@ footer p {
 }
 
 /* Modal Styles */
-/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -278,7 +277,6 @@ footer p {
 
 .modal-content:hover {
   background-color: rgba(254, 254, 254, 0.9); /* Adjusted background color */
-
 }
 
 .close {
@@ -292,7 +290,6 @@ footer p {
 .close:hover {
   color: #fff; /* Revert color to white */
 }
-
 
 #modal-image {
   text-align: center;
@@ -311,13 +308,28 @@ footer p {
 
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    padding: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 10px 0;
+  }
   .portfolio-section {
     flex-direction: column;
     align-items: center;
   }
-
   .project-item {
     width: 100%; /* Adjusted width for mobile view */
+  }
+  main {
+    padding: 10px;
+  }
+  .about-container {
+    padding: 10px;
   }
 }
 
@@ -339,6 +351,7 @@ footer p {
   transform: translateY(-50%);
   z-index: -1;
 }
+
 .about-container {
   max-width: 800px;
   margin: 0 auto;
@@ -384,5 +397,3 @@ footer p {
   width: 1em;
   margin-left: -1em;
 }
-
-
