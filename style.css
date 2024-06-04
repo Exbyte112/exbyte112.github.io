@@ -256,6 +256,31 @@ footer p {
   position: relative;
 }
 
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+
+.modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content .close:hover {
+  color: #000; /* Revert color to black */
+}
+
+.modal-content:hover {
+  background-color: rgba(254, 254, 254, 0.9); /* Adjusted background color */
+
+}
+
 .close {
   color: #aaa;
   float: right;
@@ -280,8 +305,8 @@ footer p {
 }
 
 #modal-description {
-  text-align: left;
-  color: #000;
+  text-align: center;
+  color: #000; /* Set text color to black */;
 }
 
 /* Responsive Styles */
