@@ -247,7 +247,7 @@ footer p {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: rgba(254, 254, 254, 0.8);
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -281,6 +281,7 @@ footer p {
 
 #modal-description {
   text-align: left;
+  color: #000;
 }
 
 /* Responsive Styles */
